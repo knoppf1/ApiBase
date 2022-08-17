@@ -1,0 +1,9 @@
+C:\src\api\eContadiApiOficial\Tools\bin\Debug\netcoreapp3.1\Tools.deps.json
+C:\src\api\eContadiApiOficial\Tools\bin\Debug\netcoreapp3.1\Tools.dll
+C:\src\api\eContadiApiOficial\Tools\bin\Debug\netcoreapp3.1\Tools.pdb
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.csproj.AssemblyReference.cache
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.AssemblyInfoInputs.cache
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.AssemblyInfo.cs
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.csproj.CoreCompileInputs.cache
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.dll
+C:\src\api\eContadiApiOficial\Tools\obj\Debug\netcoreapp3.1\Tools.pdb

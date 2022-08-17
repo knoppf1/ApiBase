@@ -1,0 +1,9 @@
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\bin\Debug\netcoreapp3.1\eContadi.DataDapper.deps.json
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\bin\Debug\netcoreapp3.1\eContadi.DataDapper.dll
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\bin\Debug\netcoreapp3.1\eContadi.DataDapper.pdb
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.csproj.AssemblyReference.cache
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.AssemblyInfoInputs.cache
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.AssemblyInfo.cs
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.csproj.CoreCompileInputs.cache
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.dll
+C:\src\api\eContadiApiOficial\eContadi.DataDapper\obj\Debug\netcoreapp3.1\eContadi.DataDapper.pdb
