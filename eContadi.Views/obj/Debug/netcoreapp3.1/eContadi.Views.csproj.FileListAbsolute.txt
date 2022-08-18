@@ -16,3 +16,12 @@ C:\src\eContadiApiTeste\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.As
 C:\src\eContadiApiTeste\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.csproj.CoreCompileInputs.cache
 C:\src\eContadiApiTeste\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.dll
 C:\src\eContadiApiTeste\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.pdb
+C:\src\ApiBase\eContadi.Views\bin\Debug\netcoreapp3.1\eContadi.Views.deps.json
+C:\src\ApiBase\eContadi.Views\bin\Debug\netcoreapp3.1\eContadi.Views.dll
+C:\src\ApiBase\eContadi.Views\bin\Debug\netcoreapp3.1\eContadi.Views.pdb
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.csproj.AssemblyReference.cache
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.AssemblyInfoInputs.cache
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.AssemblyInfo.cs
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.csproj.CoreCompileInputs.cache
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.dll
+C:\src\ApiBase\eContadi.Views\obj\Debug\netcoreapp3.1\eContadi.Views.pdb

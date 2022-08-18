@@ -68,13 +68,13 @@ namespace eContadi
 
             services.AddScoped<DataContext>(_ => new DataContext(ipServidor));
             services.AddScoped<DBQuery>(_ => new DBQuery(ipServidor));
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             
             //services.AddScoped<IServiceAuthentication, ServiceAuthentication>();
            
             services.AddScoped<IServiceCategoria, ServiceCategoria>();
-           
+            services.AddScoped<IServiceCadastro, ServiceCadastro>();
+
 
         }
 

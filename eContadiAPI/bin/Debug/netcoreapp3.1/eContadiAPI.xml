@@ -4,6 +4,70 @@
         <name>eContadiAPI</name>
     </assembly>
     <members>
+        <member name="T:eContadiAPI.Controllers.CadastroController">
+            <summary>
+            Controle (Cadastro)
+            </summary>
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.#ctor(eContadi.Core.Interfaces.IServiceCadastro,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Interface (Cadastro)
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.Delete(System.Int64)">
+             <summary>
+             Apaga um registro na tabela pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.List(System.Int32,System.Int32,System.Int32,System.String)">
+             <summary>
+             Listagem da tabela 
+             </summary>
+             <param name="idEmpresa"></param>
+             <param name="count"></param>
+             <param name="page"></param>
+             <param name="filter"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.Get(System.Int64)">
+             <summary>
+             Lista registros pelo {Id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.New(eContadi.Views.BusinessCrud.ViewCrudCadastro)">
+             <summary>
+             Cria um registro na tabela
+             </summary>
+             <param name="view">CRUD</param>
+             <returns>CRUD</returns>
+            [Authorize]
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.Update(eContadi.Views.BusinessCrud.ViewCrudCadastro)">
+             <summary>
+             Atualiza a tabela
+             </summary>
+             <param name="view"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:eContadiAPI.Controllers.CadastroController.Ativar(System.Int64)">
+             <summary>
+             Ativa/Inativa registro pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:eContadiAPI.Controllers.CadastroController.ListAtivo(System.Int32)" -->
         <member name="T:eContadiAPI.Controllers.CategoriaController">
             <summary>
             Controle (Categoria)

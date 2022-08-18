@@ -35,11 +35,13 @@ namespace eContadi.Data
             //Mapeamento das Tabelas para o Entity
             
             builder.Entity<Categoria>().ToTable("Categoria");
-            
+            builder.Entity<Cadastro>().ToTable("Cadastro");
+
 
             ;
             builder.Entity<Categoria>().HasKey(x => x.id);
-            
+            builder.Entity<Cadastro>().HasKey(x => x.id);
+
 
             base.OnModelCreating(builder);
         }
