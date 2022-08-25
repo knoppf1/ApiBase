@@ -4,6 +4,24 @@
         <name>eContadiAPI</name>
     </assembly>
     <members>
+        <member name="T:GSApi.Controllers.AuthenticationController">
+            <summary>
+            Controle de Autenticação
+            </summary>
+        </member>
+        <member name="M:GSApi.Controllers.AuthenticationController.#ctor(eContadi.Core.Interfaces.IServiceAuthentication)">
+            <summary>
+            Contrutor do controle
+            </summary>
+            <param name="_service">Serviço de autenticação</param>
+        </member>
+        <member name="M:GSApi.Controllers.AuthenticationController.Post(eContadi.Views.BusinessList.ViewAuthentication)">
+            <summary>
+            
+            </summary>
+            <param name="userLogin"></param>
+            <returns></returns>
+        </member>
         <member name="T:eContadiAPI.Controllers.CadastroController">
             <summary>
             Controle (Cadastro)
@@ -36,12 +54,11 @@
             [Authorize]
         </member>
         <member name="M:eContadiAPI.Controllers.CadastroController.Get(System.Int64)">
-             <summary>
-             Lista registros pelo {Id}
-             </summary>
-             <param name="id"></param>
-             <returns></returns>
-            [Authorize]
+            <summary>
+            Lista registros pelo {Id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
         </member>
         <member name="M:eContadiAPI.Controllers.CadastroController.New(eContadi.Views.BusinessCrud.ViewCrudCadastro)">
              <summary>
@@ -132,6 +149,59 @@
             [Authorize]
         </member>
         <!-- Badly formed XML comment ignored for member "M:eContadiAPI.Controllers.CategoriaController.ListAtivo(System.Int32)" -->
+        <member name="M:eContadiAPI.Controllers.UsuarioController.#ctor(eContadi.Core.Interfaces.IServiceUsuario,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:eContadiAPI.Controllers.UsuarioController.Delete(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eContadiAPI.Controllers.UsuarioController.List(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tipo"></param>
+            <param name="idEmpresa"></param>
+            <param name="count"></param>
+            <param name="page"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eContadiAPI.Controllers.UsuarioController.Get(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:eContadiAPI.Controllers.UsuarioController.New(eContadi.Views.BusinessCrud.ViewCrudUsuario)" -->
+        <member name="M:eContadiAPI.Controllers.UsuarioController.Update(eContadi.Views.BusinessCrud.ViewCrudUsuario)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eContadiAPI.Controllers.UsuarioController.Ativar(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:eContadiAPI.Controllers.UsuarioController.ListAtivo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:eContadi.Program">
             <summary> 
             

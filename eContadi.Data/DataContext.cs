@@ -36,11 +36,13 @@ namespace eContadi.Data
             
             builder.Entity<Categoria>().ToTable("Categoria");
             builder.Entity<Cadastro>().ToTable("Cadastro");
+            builder.Entity<Usuario>().ToTable("Usuario");
 
 
             ;
             builder.Entity<Categoria>().HasKey(x => x.id);
             builder.Entity<Cadastro>().HasKey(x => x.id);
+            builder.Entity<Usuario>().HasKey(x => x.id);
 
 
             base.OnModelCreating(builder);

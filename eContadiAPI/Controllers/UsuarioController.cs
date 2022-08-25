@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using eContadi.Core.Interfaces;
 using eContadi.Views.BusinessCrud;
 using eContadi.Views.BusinessList;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,24 +13,20 @@ using Ubiety.Dns.Core;
 
 namespace eContadiAPI.Controllers
 {
-    //Controladores e Rotas -> Recebe as requisições e direciona para os Serviços
-
-    /// <summary>
-    /// Controle (Cadastro)
-    /// </summary>
     [Produces("application/json")]
-    [Route("Cadastro")]
-    public class CadastroController
+    [Route("usuario")]
+    public class UsuarioController
     {
-        private readonly IServiceCadastro service;
+        private readonly IServiceUsuario service;
 
         #region Constructor
         /// <summary>
-        /// Interface (Cadastro)
+        /// 
         /// </summary>
         /// <param name="_service"></param>
         /// <param name="contextAccessor"></param>
-        public CadastroController(IServiceCadastro _service, IHttpContextAccessor contextAccessor)
+
+        public UsuarioController(IServiceUsuario _service, IHttpContextAccessor contextAccessor)
         {
             try
             {
@@ -42,14 +39,14 @@ namespace eContadiAPI.Controllers
         }
         #endregion
 
-        #region Cadastro
+        #region Usuario
 
         /// <summary>
-        /// Apaga um registro na tabela pelo {id}
+        /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpDelete]
         [Route("delete/{id}")]
         public async Task<string> Delete(long id)
@@ -58,90 +55,104 @@ namespace eContadiAPI.Controllers
             return await Task.Run(() => result);
         }
 
+        
+
+
         /// <summary>
-        /// Listagem da tabela 
+        /// 
         /// </summary>
+        /// <param name="tipo"></param>
         /// <param name="idEmpresa"></param>
         /// <param name="count"></param>
         /// <param name="page"></param>
         /// <param name="filter"></param>
         /// <returns></returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpGet]
-        [Route("list/{idEmpresa}")]
-        public async Task<ViewListRetorno<List<ViewListCadastro>>> List(int idEmpresa, int count = 10, int page = 1, string filter = "")
+        [Route("list")]
+        public async Task<ViewListRetorno<List<ViewListUsuario>>> List(int tipo, int? idEmpresa, int count = 10, int page = 1, string filter = "")
         {
-            var result = service.List(idEmpresa, count, page, filter);
-
+            var result = service.List(tipo, idEmpresa, count, page, filter);
             return await Task.Run(() => result);
         }
 
 
         /// <summary>
-        /// Lista registros pelo {Id}
+        /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [Authorize]
+        ///[Authorize]
         [HttpGet]
         [Route("get/{id}")]
-        public async Task<ViewCrudCadastro> Get(long id)
+        public async Task<ViewCrudUsuario> Get(long id)
         {
             return await Task.Run(() => service.Get(id));
         }
 
         /// <summary>
-        /// Cria um registro na tabela
+        
+
+        /// <summary>
+        /// 
         /// </summary>
         /// <param name="view">CRUD</param>
         /// <returns>CRUD</returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpPost]
         [Route("new")]
-        public async Task<ViewCrudCadastro> New([FromBody] ViewCrudCadastro view)
+        public async Task<ViewCrudUsuario> New([FromBody] ViewCrudUsuario view)
         {
             return await Task.Run(() => service.New(view));
         }
-
         /// <summary>
-        /// Atualiza a tabela
+        /// 
         /// </summary>
         /// <param name="view"></param>
         /// <returns></returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpPut]
         [Route("update")]
-        public async Task<ViewCrudCadastro> Update([FromBody] ViewCrudCadastro view)
+        public async Task<ViewCrudUsuario> Update([FromBody] ViewCrudUsuario view)
         {
             return await Task.Run(() => service.Update(view));
         }
 
-
         /// <summary>
-        /// Ativa/Inativa registro pelo {id}
+        /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpPut]
         [Route("ativar/{id}")]
-        public async Task<ViewCrudCadastro> Ativar(long id)
+        public async Task<ViewCrudUsuario> Ativar(long id)
         {
             return await Task.Run(() => service.Ativar(id));
         }
 
+
+
         /// <summary>
-        /// Lista os registros ativos
-        /// <param name="idEmpresa"></param>
+        /// 
+        /// </summary>
         /// <returns></returns>
-        ///[Authorize]
+        //[Authorize]
         [HttpGet]
-        [Route("listAtivo/{idEmpresa}")]
-        public async Task<List<ViewListCadastro>> ListAtivo(int idEmpresa)
+        [Route("listAtivo")]
+        public async Task<List<ViewListUsuario>> ListAtivo()
         {
-            var result = service.ListAtivo(idEmpresa);
+            var result = service.ListAtivo();
             return await Task.Run(() => result);
         }
         #endregion
+
+      
+
+
+
+
+
     }
 }
+

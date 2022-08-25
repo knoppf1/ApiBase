@@ -8,7 +8,7 @@ using eContadi.Core.Interfaces;
 using eContadi.Views;
 using eContadi.Data;
 using eContadi.DataDapper;
-//using eContadi.Services.Auth;
+using eContadi.Services.Auth;
 using eContadi.Services.Specific;
 using eContadi.Services.Commons;
 using eContadi.Views.BusinessList;
@@ -70,10 +70,12 @@ namespace eContadi
             services.AddScoped<DBQuery>(_ => new DBQuery(ipServidor));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             
-            //services.AddScoped<IServiceAuthentication, ServiceAuthentication>();
+            services.AddScoped<IServiceAuthentication, ServiceAuthentication>();
            
             services.AddScoped<IServiceCategoria, ServiceCategoria>();
             services.AddScoped<IServiceCadastro, ServiceCadastro>();
+            services.AddScoped<IServiceUsuario, ServiceUsuario>();
+            //services.AddScoped<IServiceAuthentication, ServiceAuthentication>();
 
 
         }
