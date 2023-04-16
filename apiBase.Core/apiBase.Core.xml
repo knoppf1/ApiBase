@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiBase.Core</name>
+    </assembly>
+    <members>
+        <member name="T:apiBase.Core.Business.UsuarioEmpresa">
+            <summary>
+             Entidade (Usuario X Empresa)
+            </summary>
+        </member>
+    </members>
+</doc>

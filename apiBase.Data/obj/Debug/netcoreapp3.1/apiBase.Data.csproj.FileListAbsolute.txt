@@ -1,0 +1,17 @@
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Data.deps.json
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Data.dll
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Data.pdb
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Core.dll
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Views.dll
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\Tools.dll
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Core.pdb
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Core.xml
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\apiBase.Views.pdb
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\bin\Debug\netcoreapp3.1\Tools.pdb
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.csproj.AssemblyReference.cache
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.AssemblyInfoInputs.cache
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.AssemblyInfo.cs
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.csproj.CoreCompileInputs.cache
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.csproj.CopyComplete
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.dll
+C:\Users\kerst\source\repos\GSInstr_Api\apiBase.Data\obj\Debug\netcoreapp3.1\apiBase.Data.pdb

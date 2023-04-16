@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiBaseAPI</name>
+    </assembly>
+    <members>
+        <member name="T:apiBaseAPI.Controllers.ClienteController">
+            <summary>
+             Controle (Cliente)
+            </summary>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.#ctor(apiBase.Core.Interfaces.IServiceCliente,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Interface (Cliente)
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.Delete(System.Int64)">
+            <summary>
+            Apaga um registro na tabela pelo {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.List(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Listagem da tabela 
+            </summary>
+            <param name="idEmpresa"></param>
+            <param name="count"></param>
+            <param name="page"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.Get(System.Int64)">
+            <summary>
+            Lista registros pelo {Id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.New(apiBase.Views.BusinessCrud.ViewCrudCliente)">
+            <summary>
+            Cria um registro na tabela
+            </summary>
+            <param name="view">CRUD</param>
+            <returns>CRUD</returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.Update(apiBase.Views.BusinessCrud.ViewCrudCliente)">
+            <summary>
+            Atualiza a tabela
+            </summary>
+            <param name="view"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.Ativar(System.Int64)">
+            <summary>
+            Ativa/Inativa registro pelo {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.ClienteController.ListAtivo(System.Int32)">
+            <summary>
+            Lista os registros ativos
+            <param name="idEmpresa"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiBase.Program">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:apiBase.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor do controle
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:apiBase.Startup.Configuration">
+            <summary>
+            Propriedade de configuração 
+            </summary>
+        </member>
+        <member name="M:apiBase.Startup.RegistreServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Injeção de Dependências - Amarra a INTERFACE ao SERVIÇO
+            </summary>
+            <param name="services">Coleção de serviços</param>
+        </member>
+        <member name="M:apiBase.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configurador de servicos
+            </summary>
+            <param name="services">Coleção de serviços</param>
+        </member>
+        <member name="M:apiBase.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configuração de aplicação
+            </summary>
+            <param name="app">Aplicação</param>
+            <param name="env">Ambiente de hospedagem</param>
+        </member>
+    </members>
+</doc>

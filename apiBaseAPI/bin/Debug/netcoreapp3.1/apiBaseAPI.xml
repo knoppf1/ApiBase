@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiBaseAPI</name>
+    </assembly>
+    <members>
+        <member name="T:GSApi.Controllers.AuthenticationController">
+            <summary>
+            Controle de Autenticação
+            </summary>
+        </member>
+        <member name="M:GSApi.Controllers.AuthenticationController.#ctor(apiBase.Core.Interfaces.IServiceAuthentication)">
+            <summary>
+            Contrutor do controle
+            </summary>
+            <param name="_service">Serviço de autenticação</param>
+        </member>
+        <member name="M:GSApi.Controllers.AuthenticationController.Post(apiBase.Views.BusinessList.ViewAuthentication)">
+            <summary>
+            
+            </summary>
+            <param name="userLogin"></param>
+            <returns></returns>
+        </member>
+        <member name="T:apiBaseAPI.Controllers.CadastroController">
+            <summary>
+            Controle (Cadastro)
+            </summary>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.#ctor(apiBase.Core.Interfaces.IServiceCadastro,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Interface (Cadastro)
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.Delete(System.Int64)">
+             <summary>
+             Apaga um registro na tabela pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.List(System.Int32,System.Int32,System.Int32,System.String)">
+             <summary>
+             Listagem da tabela 
+             </summary>
+             <param name="idEmpresa"></param>
+             <param name="count"></param>
+             <param name="page"></param>
+             <param name="filter"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.Get(System.Int64)">
+            <summary>
+            Lista registros pelo {Id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.New(apiBase.Views.BusinessCrud.ViewCrudCadastro)">
+             <summary>
+             Cria um registro na tabela
+             </summary>
+             <param name="view">CRUD</param>
+             <returns>CRUD</returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.Update(apiBase.Views.BusinessCrud.ViewCrudCadastro)">
+             <summary>
+             Atualiza a tabela
+             </summary>
+             <param name="view"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CadastroController.Ativar(System.Int64)">
+             <summary>
+             Ativa/Inativa registro pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:apiBaseAPI.Controllers.CadastroController.ListAtivo(System.Int32)" -->
+        <member name="T:apiBaseAPI.Controllers.CategoriaController">
+            <summary>
+            Controle (Categoria)
+            </summary>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.#ctor(apiBase.Core.Interfaces.IServiceCategoria,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Interface (Categoria)
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.Delete(System.Int64)">
+             <summary>
+             Apaga um registro na tabela pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.List(System.Int32,System.Int32,System.Int32,System.String)">
+             <summary>
+             Listagem da tabela 
+             </summary>
+             <param name="idEmpresa"></param>
+             <param name="count"></param>
+             <param name="page"></param>
+             <param name="filter"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.Get(System.Int64)">
+             <summary>
+             Lista registros pelo {Id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.New(apiBase.Views.BusinessCrud.ViewCrudCategoria)">
+             <summary>
+             Cria um registro na tabela
+             </summary>
+             <param name="view">CRUD</param>
+             <returns>CRUD</returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.Update(apiBase.Views.BusinessCrud.ViewCrudCategoria)">
+             <summary>
+             Atualiza a tabela
+             </summary>
+             <param name="view"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <member name="M:apiBaseAPI.Controllers.CategoriaController.Ativar(System.Int64)">
+             <summary>
+             Ativa/Inativa registro pelo {id}
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:apiBaseAPI.Controllers.CategoriaController.ListAtivo(System.Int32)" -->
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.#ctor(apiBase.Core.Interfaces.IServiceUsuario,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            
+            </summary>
+            <param name="_service"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.Delete(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.List(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tipo"></param>
+            <param name="idEmpresa"></param>
+            <param name="count"></param>
+            <param name="page"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.Get(System.Int64)">
+             <summary>
+             
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+            [Authorize]
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:apiBaseAPI.Controllers.UsuarioController.New(apiBase.Views.BusinessCrud.ViewCrudUsuario)" -->
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.Update(apiBase.Views.BusinessCrud.ViewCrudUsuario)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.Ativar(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiBaseAPI.Controllers.UsuarioController.ListAtivo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiBase.Program">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:apiBase.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiBase.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor do controle
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:apiBase.Startup.Configuration">
+            <summary>
+            Propriedade de configura��o 
+            </summary>
+        </member>
+        <member name="M:apiBase.Startup.RegistreServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Inje��o de Depend�ncias - Amarra a INTERFACE ao SERVI�O
+            </summary>
+            <param name="services">Cole��o de servi�os</param>
+        </member>
+        <member name="M:apiBase.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configurador de servicos
+            </summary>
+            <param name="services">Cole��o de servi�os</param>
+        </member>
+        <member name="M:apiBase.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configura��o de aplica��o
+            </summary>
+            <param name="app">Aplica��o</param>
+            <param name="env">Ambiente de hospedagem</param>
+        </member>
+    </members>
+</doc>
